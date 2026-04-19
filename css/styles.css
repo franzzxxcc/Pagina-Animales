@@ -7,7 +7,9 @@ body {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   height: 100vh;
+   min-height: 100vh;
+   
+   
    display: flex;
    flex-direction: column;
 }
@@ -23,7 +25,7 @@ body {
     color: black;
     border: solid black 2.2px; /* EDITAR */
     border-radius: 15px;
-    font-size: 12px;
+    font-size: 20px;
     height: 20px;
 }
 
@@ -34,8 +36,8 @@ body {
     border-radius: 15px;
     color: black;
     margin-top: 20px;
-   border: solid black 2.2px; /* EDITAR */
-    font-size: 10px;
+    border: solid black 2.2px; /* EDITAR */
+    font-size: 20px;
 }
 
 .menu {
@@ -59,7 +61,19 @@ body {
     margin-top: 20px;  
  
 }
+.marco{
+    display: flex;
+    width: 20vw;
 
+    height: auto;
+    border-radius: 5%;
+    background-color: transparent;
+    border: solid transparent 2.2px;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+}
 .animal1,
 .animal2,
 .animal3,
@@ -71,13 +85,19 @@ body {
 .animal9,
 .animal10 {
     display: flex;
-    justify-content: space-around;
-    background-color: #7d7d7d; /* EDITAR */
+    justify-content: center;
+    align-items: center;
+    background-color: #7d7d7d;
     width: 10vw;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
-    padding: 30px;
-    height: 10vw;
-    border: solid black 2.2px; /* EDITAR */
+    padding: 1rem;
+    box-sizing: border-box;
+    border: solid black 2.2px;
+}
+.textcuadro{
+    color:whitesmoke;
+    padding: 10px;
 }
 
 .navbar2 {
@@ -92,7 +112,7 @@ body {
     color: black;
     border: solid black 2.2px; /* EDITAR */
     border-radius: 15px;
-    font-size: 12px;
+    font-size: 20px;
     height: 5px;
 }
 
@@ -116,27 +136,34 @@ body {
     color: black;
     border: solid black 2.2px; /* EDITAR */
     border-radius: 15px;
-    font-size: 12px;
+    font-size: 20px;
     height: 5px;
     width: 50%;
 }
 
 footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
     margin-top: auto;
     background-color: red;
     height: 30px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
+    font-size: 20px;
     padding: 10px;
     border-radius: 20px;
     background-color: yellowgreen;
     border: solid black 2.2px; /* EDITAR */
 }
-.footer{
-    color: black;
-    text-decoration: none;
+
+.opinion {
+    display: flex;
+    justify-content:end;
+    text-align: center;
+    padding-right: 10px;
 }
+
+.footer {
+    text-decoration: none;
+    color:black;
+}|
