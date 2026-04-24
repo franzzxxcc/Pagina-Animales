@@ -6,8 +6,16 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script>
+     function resena() {
+       let opinion = prompt("Tu reseña de la web: ");
+       if (opinion) {
+         alert("Gracias por tu reseña: " + opinion);
+       }
+     }
+   </script>
 </head>
 <body>
 
@@ -15,7 +23,7 @@
     <div class="logo"><a href="../index.html"><img src="../img/logo.png" width="35" height="40" style="display: block; margin: 0 auto;"></a></div>
     <div class="menu">
         <a href="../index.html">Inicio</a>
-        <a href="animales.html">Animales</a>
+        <a href="animales.html" style="text-decoration:underline;">Animales</a>
     </div>
 </nav>
 
@@ -28,10 +36,10 @@
 
 <footer>
    <div class="derechos">
-     <a>C 2026 Animalia. Gracias por tu visita.</a>
+     <a>© 2026 Animalia</a>
    </div>
    <div class="opinion">
-    <a href="*" class="footer">Reseña</a>
+    <button class="footer" onclick="resena()">Reseña</button>
 
    </div>
 </footer>

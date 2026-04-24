@@ -13,6 +13,7 @@ body {
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
+    font-family: "Noto Sans", sans-serif;
     box-sizing: border-box;
 }
 
@@ -23,7 +24,6 @@ body {
     align-items: center;
     padding: 24px;
     background-color: yellowgreen;
-    font-family: "Google Sans", sans-serif;
     color: black;
     border: solid black 2.2px;
     border-radius: 15px;
@@ -72,7 +72,6 @@ body {
 
 .marco {
     display: flex;
-    width: clamp(120px, 20vw, 220px);
     height: auto;
     border-radius: 5%;
     background-color: transparent;
@@ -101,12 +100,17 @@ body {
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     padding: 1rem;
-    border: solid black 2.2px;
+    border: solid black 3px;
 }
 
 .textcuadro {
-    color: whitesmoke;
-    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 16px;
+    border: solid black 3px;
+    padding: 6px;
+    margin: 10px;
 }
 
 .secciones {
@@ -129,7 +133,6 @@ body {
     border-radius: 15px;
     font-size: 20px;
     height: auto;
-    width: calc(100% - 20px);
 }
 
 .navbar3,

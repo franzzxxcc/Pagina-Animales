@@ -6,31 +6,38 @@
   <link rel="stylesheet" href="css/styles.css">
   <title>Animalia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script>
+     function resena() {
+       let opinion = prompt("Tu reseña de la web: ");
+       if (opinion) {
+         alert("Gracias por tu reseña: " + opinion);
+       }
+     }
+   </script>
 </head>
 <body>
 <nav class="navbar">
     <div class="logo"><a href="index.html"><img src="img/logo.png" width="35" height="40" style="display: block; margin: 0 auto;"></a></div>
     <div class="menu">
-        <a href="index.html">Inicio</a>
+        <a href="index.html" style="text-decoration:underline;">Inicio</a>
         <a href="secciones/animales.html">Animales</a>
     </div>
 </nav>
 
 <main class="main">
-  <div class="container">
-      <h1>Bienvenido a nuestro sitio de animales</h1>
-      <p>Explora nuestra colección de animales y aprende más sobre ellos. Tenemos información detallada y fotos de cada especie. ¡Disfruta tu visita!</p>
+  <div class="container" style="text-align: center;">
+      <h1>Bienvenido a Animalia</h1>
+      <p>Explora nuestra colección de animales y aprende más sobre ellos. Tenemos fotos de cada especie. ¡Disfruta tu visita!</p>
   </div>
 </main>
 <footer>
    <div class="derechos">
-     <a>C 2026 Animalia. Gracias por tu visita.</a>
+     <a>© 2026 Animalia</a>
    </div>
    <div class="opinion">
-    <a href="*" class="footer">Reseña</a>
-
+    <button class="footer" onclick="resena()">Reseña</button>
    </div>
 </footer>
 </body>
